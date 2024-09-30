@@ -28,8 +28,8 @@ export async function POST(req:Request) {
                 quantity: item.quantity,
               })),
             mode:"payment",
-            success_url:`http://localhost:3000/payment-sucess?session_id={CHECKOUT_SESSION_ID}`,
-            cancel_url:`http://localhost:3000/listings/${ListingId}`,
+            success_url:`https://book-hotel-two.vercel.app/payment-sucess?session_id={CHECKOUT_SESSION_ID}`,
+            cancel_url:`https://book-hotel-two.vercel.app/listings/${ListingId}`,
 
             })
             // console.log(session)
